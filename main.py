@@ -10,6 +10,12 @@ CHAOJIYING_PASSWORD = 'XXXXXX'
 CHAOJIYING_SOFT_ID = 'XXXXXX'
 CHAOJIYING_KIND = 9004  # 验证码类型
 
+# 报名链接
+CLTTURL = 'http://scbm.cltt.org/pscweb/signUp.html'
+
+# 报名城市
+CITY = '成都市'
+
 
 def run(base_info, user_list, chaojiying, phone_dict):
     """
@@ -37,14 +43,14 @@ def sign_up(data):
 
 if __name__ == '__main__':
     # 普通话报名网址
-    cltt_url = 'http://gzbm.cltt.org/pscweb/signUp.html'
+    cltt_url = CLTTURL
     # 报名城市
-    city = '贵阳市'
+    city = CITY
 
     # 手机号获取网址
     phone_url = 'https://www.yinsiduanxin.com/china-phone-number/page/{}.html'
     # 客户信息文件
-    user_path = '普通话.txt'
+    user_path = 'config.txt'
     # 需要照片 格式：  张三#女#汉族#5115XXXXXXXXXXX#C:\\Users\\ahao\\Desktop\\WPS图片-修改尺寸.jpg
     # 不需要照片格式：  张三#女#汉族#5115XXXXXXXXXXX#无
 
