@@ -1,9 +1,6 @@
 import requests
-from bs4 import BeautifulSoup
 from lxml import etree
-import time
 from selenium import webdriver
-from selenium.webdriver.support.ui import WebDriverWait
 
 
 class User:

@@ -1,12 +1,9 @@
 import re
 import requests
 import time
-import threading
-from hashlib import md5
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from bs4 import BeautifulSoup
 from lxml import etree
 
 from model import Phone, Browser, User

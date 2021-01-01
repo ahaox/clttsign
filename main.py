@@ -1,4 +1,3 @@
-import threading
 from multiprocessing.dummy import Pool
 from service import ClttService, PhoneService, UserService
 from verificationUntils import Chaojiying, CrackTouClick
